@@ -234,7 +234,7 @@ async def _(event):
 # صيد عدد نوع قناة
 
 
-@sython.on(events.NewMessage(outgoing=True, pattern=r"\.Run (.*)"))
+@sython.on(events.NewMessage(outgoing=True, pattern=r"\.صيد (.*)"))
 async def _(event):
     if ispay2[0] == "yes":
         isclaim.clear()
@@ -247,7 +247,7 @@ async def _(event):
 Run Tyeps `{choice}` On `{ch}` of `{msg[0]}` ! 
  """)
 
-        @sython.on(events.NewMessage(outgoing=True, pattern=r"\.clicks"))
+        @sython.on(events.NewMessage(outgoing=True, pattern=r"\.حالة الصيد"))
         async def _(event):
             if ispay2[0] == "yes":
                 if "on" in isclaim:
@@ -274,29 +274,29 @@ Run Tyeps `{choice}` On `{ch}` of `{msg[0]}` !
                 try:
                     await sython(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
-                    await event.client.send_file(event.chat_id, "https://t.me/illl0o/27", caption=f'''
-⌯ Done caught before @illl0 ! ⚡
-⤷ UserName : @{username} 
+                    await event.client.send_file(event.chat_id, "https://t.me/illl0o/3", caption=f'''
+⌯ Done caught before @illl0 ! 🐊
+⤷ UserName  -> @{username} 
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
-⤷ By : ( @isAndreew - @g_4_q )
+⤷ By : ( @isAndreew )
     ''')
-                    await event.client.send_file("teamzer0bot", "https://t.me/illl0o/27", caption=f'''
-⌯ Done caught before @illl0 ! ⚡
-⤷ UserName : @{username} 
+                    await event.client.send_file("@isandreew", "https://t.me/illl0o/3", caption=f'''
+⌯ Done caught before @illl0 ! 🐊
+⤷ UserName  -> @{username} 
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
-⤷ By : ( @isAndreew - @g_4_q ) ''') 
+⤷ By : ( @isAndreew ) ''') 
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
-                    await sython.send_message(event.chat_id, f'''oH get Flood :  @{username} - {eee} ''')
+                    await sython.send_message(event.chat_id, f'''Flood :  @{username} - {eee} ''')
                     if "A wait of" in str(eee):
                         break
                     else:
-                        await sython.send_message(event.chat.id, f"oH The User in Auction : @{username}")
+                        await sython.send_message(event.chat.id, f"User in Auction : @{username}")
             else:
                 pass
             trys += 1
@@ -304,7 +304,7 @@ Run Tyeps `{choice}` On `{ch}` of `{msg[0]}` !
         isclaim.clear()
         isclaim.append("off")
         trys = ""
-        await event.client.send_message(event.chat_id, "Done Save , Don't Try I'm in The Lead 🥇")
+        await event.client.send_message(event.chat_id, "DoNe Caught 🗽")
         
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
@@ -340,8 +340,8 @@ async def _(event):
                         await sython(functions.channels.UpdateUsernameRequest(
                             channel=ch, username=username))
                         await event.client.send_message(event.chat_id, f'''
-⌯ Done caught before @illl0 ! ⚡
-⤷ UserName : @{username} 
+⌯ Done caught before @illl0 ! 🐊
+⤷ UserName  -> @{username} 
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
 ⤷ By : ( @isAndreew )
@@ -375,8 +375,8 @@ async def _(event):
                 await sython(functions.channels.UpdateUsernameRequest(
                     channel=ch, username=username))
                 await event.client.send_message(event.chat_id, f'''
-⌯ Done caught before @illl0 ! ⚡
-⤷ UserName : @{username} 
+⌯ Done caught before @illl0 ! 🐊
+⤷ UserName  -> @{username} 
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
 ⤷ By : ( @isAndreew )
