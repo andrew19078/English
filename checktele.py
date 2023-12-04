@@ -63,15 +63,17 @@ def gen_user(choice):
     if choice == "2":
         c = str(''.join((random.choice(a) for i in range(1))))
         d = str(''.join((random.choice(e) for i in range(1))))
-            f1 = c+'_'+d+c+d
-            f2 = c+d+c+'_'+d
-            f3 = c+d+'_'+d+c
-            f4 = c+'_'+d+d+c
-            f5 = c+d+'_'+d+d
-            f6 = c+'_'+d+d+d
-            f7 = c+d1+'_'+d1+d1
-            f8 = c+'_'+d1+d1+d1
-            f = f1,f2,f3,f4,f5,f6,f7,f8
+        f1 = c+'_'+d+c+d
+        f2 = c+d+c+'_'+d
+        f3 = c+d+'_'+d+c
+        f4 = c+'_'+d+d+c
+        f4 = c+d+'_'+d+d
+        f5 = c+'_'+d+d+d
+        f6 = c+d1+'_'+d1+d1
+        f7 = c+'_'+d1+d1+d1
+        f8 = c+c+c+'_'+d
+        f9 = c+c+c+'_'+d1
+        f = f1,f2,f3,f4,f5,f6,f7,f8,f9
         f = random.choice(f)
         username = f
         if username in banned[0]:
@@ -81,11 +83,7 @@ def gen_user(choice):
             f2 = c+d+c+'_'+d
             f3 = c+d+'_'+d+c
             f4 = c+'_'+d+d+c
-            f5 = c+d+'_'+d+d
-            f6 = c+'_'+d+d+d
-            f7 = c+d1+'_'+d1+d1
-            f8 = c+'_'+d1+d1+d1
-            f = f1,f2,f3,f4,f5,f6,f7,f8
+            f = f1,f2,f3,f4
             f = random.choice(f)
             username = f
         else:
@@ -289,7 +287,7 @@ Run Tyeps `{choice}` On `{ch}` of `{msg[0]}` !
 ⤷ Save : ( Channel )
 ⤷ By : ( @isAndreew )
     ''')
-                    await event.client.send_file("@isandreew", "https://t.me/illl0o/3", caption=f'''
+                    await event.client.send_file("teamzer0bot", "https://t.me/illl0o/3", caption=f'''
 ⌯ Done caught before @illl0 ! 🐊
 ⤷ UserName  -> @{username} 
 ⤷ Clicks : {trys} 
@@ -348,8 +346,8 @@ async def _(event):
                         await sython(functions.channels.UpdateUsernameRequest(
                             channel=ch, username=username))
                         await event.client.send_message(event.chat_id, f'''
-⌯ Done caught before @illl0 ! 🐊
-⤷ UserName  -> @{username} 
+⌯ Done caught before @illl0 ! ⚡
+⤷ UserName : {username} 
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
 ⤷ By : ( @isAndreew )
@@ -383,8 +381,8 @@ async def _(event):
                 await sython(functions.channels.UpdateUsernameRequest(
                     channel=ch, username=username))
                 await event.client.send_message(event.chat_id, f'''
-⌯ Done caught before @illl0 ! 🐊
-⤷ UserName  -> @{username} 
+⌯ Done caught before @illl0 ! ⚡
+⤷ UserName : {username} 
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
 ⤷ By : ( @isAndreew )
