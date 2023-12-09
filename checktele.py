@@ -43,38 +43,27 @@ def check_user(username):
 
 def gen_user(choice):
     if choice == "1":
-        c = str(''.join((random.choice(a) for i in range(1))))
-        d = str(''.join((random.choice(e) for i in range(1))))
-        f1 = c+d+d+d+c+d
-        f2 = c+d+c+d+d+c
-        f3 = c+d+d+d+d+c
-        f4 = c+d+d+c+c+c
-        f5 = c+d+c+d+d+d
-        f11 = f1,f2,f3,f4,f5
-        f = random.choice(f11)
-        username = f
+        c = d = random.choices(a)
+        d = random.choices(e)
+        f = [c[0], d[0], c[0], c[0], c[0], d[0]]
+        random.shuffle(f)
+        username = ''.join(f)
         if username in banned[0]:
-            c = str(''.join((random.choice(a) for i in range(1))))
-            d = str(''.join((random.choice(e) for i in range(1))))
-            f = c+d+d+d+c+d
-            username = f
+            c = d = random.choices(a)
+            d = random.choices(e)
+            f = [c[0], d[0], c[0], c[0], c[0], d[0]]
+            random.shuffle(f)
+            username = ''.join(f)
         else:
             pass
     if choice == "2":
         c = str(''.join((random.choice(a) for i in range(1))))
         d = str(''.join((random.choice(e) for i in range(1))))
-        d1 = str(''.join((random.choice(e) for i in range(1))))
         f1 = c+'_'+d+c+d
         f2 = c+d+c+'_'+d
         f3 = c+d+'_'+d+c
         f4 = c+'_'+d+d+c
-        f4 = c+d+'_'+d+d
-        f5 = c+'_'+d+d+d
-        f6 = c+d1+'_'+d1+d1
-        f7 = c+'_'+d1+d1+d1
-        f8 = c+c+c+'_'+d
-        f9 = c+c+c+'_'+d1
-        f = f1,f2,f3,f4,f5,f6,f7,f8,f9
+        f = f1,f2,f3,f4
         f = random.choice(f)
         username = f
         if username in banned[0]:
@@ -281,15 +270,15 @@ Run Tyeps `{choice}` On `{ch}` of `{msg[0]}` !
                 try:
                     await sython(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
-                    await event.client.send_file(event.chat_id, "https://t.me/illl0o/3", caption=f'''
-⌯ Done caught before @illl0 ! 🐊
+                    await event.client.send_file(event.chat_id, "https://t.me/illl0o/28", caption=f'''
+⌯ Done caught before @ziii0 ! 🐊
 ⤷ UserName  -> @{username} 
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
 ⤷ By : ( @isAndreew )
     ''')
-                    await event.client.send_file("teamzer0bot", "https://t.me/illl0o/3", caption=f'''
-⌯ Done caught before @illl0 ! 🐊
+                    await event.client.send_file("@isandreew", "https://t.me/illl0o/28", caption=f'''
+⌯ Done caught before @ziii0 ! 🐊
 ⤷ UserName  -> @{username} 
 ⤷ Clicks : {trys} 
 ⤷ Save : ( Channel )
@@ -299,7 +288,7 @@ Run Tyeps `{choice}` On `{ch}` of `{msg[0]}` !
                     with open("banned.txt", "a") as f:
                         f.write(f"\n{username}")
                 except Exception as eee:
-                    await sython.send_message(event.chat_id, f'''Flood :  @{username} - {eee} ''')
+                    await sython.send_message(event.chat_id, f'''Flood :  @{username}''')
                     if "A wait of" in str(eee):
                         break
                     else:
