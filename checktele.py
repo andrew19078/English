@@ -43,14 +43,14 @@ def check_user(username):
 
 def gen_user(choice):
     if choice == "1":
-        c = d = random.choices(a)
-        d = random.choices(e)
+        c = d = random.choice(a)
+        d = random.choice(e)
         f = [c[0], d[0], c[0], c[0], c[0], d[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
-            c = d = random.choices(a)
-            d = random.choices(e)
+            c = d = random.choice(a)
+            d = random.choice(e)
             f = [c[0], d[0], c[0], c[0], c[0], d[0]]
             random.shuffle(f)
             username = ''.join(f)
