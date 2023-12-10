@@ -1,5 +1,5 @@
 commands = '''
-**⟨ ANDREW CHECKER⟩
+**⟨ MAX CHECKER⟩
 
 الاوامـر :
 
@@ -52,7 +52,7 @@ sec3 = """
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 """
 sec4 = """
-الاوامر الاضافية | ANDREW 
+الاوامر الاضافية | MAX
 
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 
@@ -123,34 +123,36 @@ tele_checker = '''
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 '''
 tele_checker2 = '''
-⟨ Andrew CHECKER ⟩
+⟨ ANDREW CHECKER ⟩
 
 الانواع :
 ------------------------
 1 : سداسي حرفين
 ssxxx = xxxx55 = ssxxss
 
-2 : ثلاثي
-s_x_c = s_x_5 = s_5_x = s_5_7 
-s_x_x = s_x_s = s_s_x 
-s_s_5 = s_5_s = s_5_5
+2 : aba_a
 
 3 : vip10
 
-4 : vip100
+4 : vip1234
 
 5 : خماسي مثل
 sxxxc = s777c = sxxx7 = s7773 = sxxxs = sxxxx
 
 6 : بوت ثائي
+x8bot
 
-7 : بوت ثلاثي
+7 : بوت ثلاثي 
+sdxbot = sx5bot = s4dbot = s55bot = ss5bot 
 
 8 : خماسي
 scooo
 
-10 : رباعي 
+9 : خماسي حرف
+s4sss = sxsss
+
+10 : #_#_#  ثلاثي
 ---------------------
-مثال : .صيد 700000000 2 @ziii0 
-@illl0 = @isAndreew
+مثال : .صيد 700000000 2 @illl0 
+@isAndreew= @illl0
 '''
