@@ -52,7 +52,7 @@ sec3 = """
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 """
 sec4 = """
-الاوامر الاضافية | MAX
+الاوامر الاضافية | ANDREW 
 
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 
@@ -123,20 +123,34 @@ tele_checker = '''
 ╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍╍
 '''
 tele_checker2 = '''
-༺ཌ༈ Team Zero Chcker #0 ༈ད༻
+⟨ Andrew CHECKER ⟩
 
-Types :
+الانواع :
 ------------------------
-1 - a111a1 - abbbab
-2 - a_1a1  -  a_bab - aba_b - a_abb - a_bba - ab_ba
-3 - vip1199 - vip 1919 - id123 
-4 - ab1111 - abccc
-5 - sxxxc - s777c - sxxx7 - s7773 - sxxxs - sxxxx
-6 - x8bot
-7 - sdxbot - sx5bot - s4dbot - s55bot - ss5bot 
-8 - scooo
-9 - s4sss - sxsss
-10 - a_b_c - a_b_1
+1 : سداسي حرفين
+ssxxx = xxxx55 = ssxxss
+
+2 : ثلاثي
+s_x_c = s_x_5 = s_5_x = s_5_7 
+s_x_x = s_x_s = s_s_x 
+s_s_5 = s_5_s = s_5_5
+
+3 : vip10
+
+4 : vip100
+
+5 : خماسي مثل
+sxxxc = s777c = sxxx7 = s7773 = sxxxs = sxxxx
+
+6 : بوت ثائي
+
+7 : بوت ثلاثي
+
+8 : خماسي
+scooo
+
+10 : رباعي 
 ---------------------
-Example : `.Run 1 5555 @illl0 `
+مثال : .صيد 700000000 2 @ziii0 
+@illl0 = @isAndreew
 '''
