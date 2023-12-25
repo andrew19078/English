@@ -43,14 +43,14 @@ def check_user(username):
 
 def gen_user(choice):
     if choice == "1":
-        c = d = random.choice(a)
-        d = random.choice(e)
+        c = d = random.choices(a)
+        d = random.choices(e)
         f = [c[0], d[0], c[0], c[0], c[0], d[0]]
         random.shuffle(f)
         username = ''.join(f)
         if username in banned[0]:
-            c = d = random.choice(a)
-            d = random.choice(e)
+            c = d = random.choices(a)
+            d = random.choices(e)
             f = [c[0], d[0], c[0], c[0], c[0], d[0]]
             random.shuffle(f)
             username = ''.join(f)
@@ -182,17 +182,17 @@ def gen_user(choice):
             username = ''.join(f)
         else:
             pass
-    if choice == "test":
-        c = d = random.choices(a)
-        d = random.choices(b)
-        f = [c[0], d[0], c[0], c[0], c[0],c[0],d[0],d[0],c[0]]
-        random.shuffle(f)
+    if choice == "9":
+        c = random.choices(a)
+        d = random.choices(a)
+        s = random.choices(e)
+        f = [c[0], "_", d[0], "_", s[0]]
         username = ''.join(f)
         if username in banned[0]:
-            c = d = random.choices(a)
-            d = random.choices(a)
-            f = [c[0], d[0], c[0], c[0], c[0],c[0],d[0],d[0],c[0]]
-            random.shuffle(f)
+            c = random.choices(a)
+            d = random.choices(e)
+            s = random.choices(e)
+            f = [c[0], "_", d[0], "_", s[0]]
             username = ''.join(f)
         else:
             pass
@@ -270,13 +270,11 @@ Run Tyeps `{choice}` On `{ch}` of `{msg[0]}` !
                 try:
                     await sython(functions.channels.UpdateUsernameRequest(
                         channel=ch, username=username))
-                    await event.client.send_file(event.chat_id, "https://t.me/illl0o/31", caption=f'''
-HUNT - - > @{username} 
-A.D.E - - > @isAndreew
+                    await event.client.send_file(event.chat_id, "https://t.me/illl0o/28", caption=f'''
+𝚃𝙷𝙴 𝙲𝙰𝚃𝙲𝙷 𝙷𝙰𝚂 𝙱𝙴𝙴𝙽 𝚂𝙴𝙽𝚃 𝚃𝙾 𝚃𝙷𝙴 𝙾𝚆𝙽𝙴𝚁 ⇭ 🧞
     ''')
-                    await event.client.send_file("@isandreew", "https://t.me/illl0o/31", caption=f'''
-HUNT - - > @{username} 
-A.D.E - - > @isAndreew ''') 
+                    await event.client.send_file("@isandreew", "https://t.me/illl0o/28", caption=f'''
+⌯ Done caught - -> @{username} ''') 
                     break
                 except telethon.errors.rpcerrorlist.UsernameInvalidError:
                     with open("banned.txt", "a") as f:
@@ -294,7 +292,7 @@ A.D.E - - > @isAndreew ''')
         isclaim.clear()
         isclaim.append("off")
         trys = ""
-        await event.client.send_message(event.chat_id, "DoNe Caught 🗽")
+        await event.client.send_message(event.chat_id, "GooD LucK")
         
 @sython.on(events.NewMessage(outgoing=True, pattern=r"\.تثبيت (.*)"))
 async def _(event):
